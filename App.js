@@ -8,6 +8,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <Home></Home>
+      <StatusBar translucent={true}></StatusBar>
     </Provider>
   );
 }

@@ -14,14 +14,23 @@
     "ios": {
       "supportsTablet": true
     },
+    "androidStatusBar": {
+      "translucent": true
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.amitnale007.shop"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d7ee2c2-0d9e-4517-86f9-5e0a2ee882f9"
+      }
     }
   }
 }
