@@ -26,7 +26,7 @@ function ProductCard({ item, onPress }) {
   };
 
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
+    // <TouchableWithoutFeedback onPress={onPress}>
       <View className="border-[1px] border-gray-300 rounded-lg shadow-lg w-80 p-4 bg-white m-2">
         <Image
           source={{ uri: item.image }}
@@ -69,7 +69,7 @@ function ProductCard({ item, onPress }) {
           </TouchableOpacity>
         )}
       </View>
-    </TouchableWithoutFeedback>
+    // </TouchableWithoutFeedback>
   );
 }
 

@@ -45,8 +45,8 @@ function Checkout({ navigation }) {
             <View className="border border-gray-300 p-4 mb-4 rounded-lg shadow-sm">
               <Text className="text-lg font-semibold">{item.title}</Text>
               <Text className="text-gray-600">Quantity: {item.quantity}</Text>
-              <Text className="text-gray-600">Price: ${item.price}</Text>
-              <Text className="text-gray-700 font-bold mt-2">Total: ${item.price * item.quantity}</Text>
+              <Text className="text-gray-600">Price: Rs {item.price}</Text>
+              <Text className="text-gray-700 font-bold mt-2">Total: Rs {item.price * item.quantity}</Text>
             </View>
           )}
           contentContainerStyle={{ paddingBottom: 80 }} // Ensure space for button
