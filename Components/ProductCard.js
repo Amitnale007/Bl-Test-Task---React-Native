@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, TouchableWithoutFeedback } from "react-native";
 import { AntDesign } from "@expo/vector-icons"; // For icons
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -26,7 +26,7 @@ function ProductCard({ item, onPress }) {
   };
 
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableWithoutFeedback onPress={onPress}>
       <View className="border-[1px] border-gray-300 rounded-lg shadow-lg w-80 p-4 bg-white m-2">
         <Image
           source={{ uri: item.image }}
@@ -69,7 +69,7 @@ function ProductCard({ item, onPress }) {
           </TouchableOpacity>
         )}
       </View>
-    </TouchableOpacity>
+    </TouchableWithoutFeedback>
   );
 }
 
